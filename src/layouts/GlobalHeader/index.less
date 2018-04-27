@@ -1,0 +1,30 @@
+@global-header-height: 70px;
+.header{
+  height: @global-header-height;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  border-bottom: 3px solid #d35a31;
+  img{
+    width: 200px;
+    height: @global-header-height - 3px;
+    float: left;
+  }
+  nav{
+    height: @global-header-height;
+    line-height: @global-header-height;
+    float: right;
+    text-align: center;
+    a{
+      display: inline-block;
+      width: 100px;
+      height: @global-header-height - 20px;
+      line-height: @global-header-height - 20px;
+      box-sizing: border-box;
+    }
+    a.active{
+      border: 3px solid #d35a31;
+    }
+  }
+}
+
